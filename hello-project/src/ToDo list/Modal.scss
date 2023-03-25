@@ -1,0 +1,159 @@
+.userList {
+  position: relative;
+  &_items {
+    &_title {
+      margin-top: 50px;
+      h3 {
+        text-align: center;
+        font-size: 55px;
+        line-height: 70px;
+        text-transform: capitalize;
+      }
+    }
+
+    &_addUserBtn {
+      margin: 25px 0px 50px 0px;
+      button {
+        color: #ffffff;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 12px;
+        background: blue;
+        font-weight: 600;
+        font-size: 25px;
+      }
+
+      button:hover {
+        cursor: pointer;
+        color: blue;
+        background: gray;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
+    &_table {
+      padding-bottom: 50px;
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        tr {
+          th {
+            color: gray;
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+          }
+          td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+            color: #4e4f56;
+            font-weight: 500;
+            font-size: 20px;
+
+            i {
+              font-size: 30px;
+              color: #000000;
+            }
+
+            i:hover {
+              cursor: pointer;
+            }
+            .edit:hover {
+              color: green;
+              transition: all 0.2s ease-in-out;
+            }
+            .delete:hover {
+              color: red;
+              transition: all 0.2s ease-in-out;
+            }
+          }
+        }
+
+        tr:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  .modal {
+    width: 100%;
+    padding: 100px 0px 72px 0px;
+    background: #1010109a;
+    top: -103px;
+
+    position: absolute;
+
+    transition: all 0.6s ease-in-out;
+    .modal_card {
+      width: 100%;
+      margin: 0 auto;
+      width: 40%;
+      background-color: #ddd;
+      border-radius: 15px;
+
+      i {
+        padding: 5px;
+        float: right;
+        color: blue;
+        font-size: 40px;
+      }
+
+      i:hover {
+        cursor: pointer;
+        color: red;
+        transform: rotate(180deg);
+        transition: all 0.2s ease-in-out;
+      }
+
+      form {
+        text-align: center;
+        padding: 28px 15px;
+
+        h4 {
+          font-size: 35px;
+          margin-bottom: 18px;
+          color: blue;
+        }
+
+        .inputDiv {
+          padding: 10px;
+          input {
+            width: 100%;
+            padding: 20px 10px;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+
+        .buttonDiv {
+          margin-top: 25px;
+          button {
+            font-size: 23px;
+            font-weight: 600;
+            color: #ffffff;
+            padding: 15px 45px;
+            background: blue;
+            border: none;
+            border-radius: 12px;
+          }
+
+          button:hover {
+            cursor: pointer;
+            color: blue;
+            background: gray;
+            transition: all 0.2s ease-out;
+          }
+        }
+      }
+    }
+  }
+
+  .active {
+    transition: all 0.6s ease-in-out;
+    top: -900px;
+  }
+}

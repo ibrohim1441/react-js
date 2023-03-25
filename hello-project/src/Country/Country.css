@@ -1,0 +1,10 @@
+.Country_ul{
+  list-style: none;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.Country{
+  display: flex; 
+  gap: 15px;
+}
