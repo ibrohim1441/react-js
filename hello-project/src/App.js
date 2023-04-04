@@ -1,20 +1,19 @@
-// import logo from './logo.svg';
-import './App.css';
-import Header from "./Header/Header";
-import Onesection from "./Onesection/Onesection";
-import Count from "./Count/Componenta";
-import Url from './Apiurl/Url';
-import Todo from './ToDo list/Todo';
-import Modal from './ToDo list/Modal';
-import Green from './Green';
-import Country from './Country/Country';
+import Home from "./Country/home/Home";
+import "./App.css";
+import { Routes, Route } from "react-router";
+import SingleArticle from "./Country/single/SingleArticle";
 
 function App() {
   return (
-    <div>
-      
-      <Country />
-     
+    <div className="App">
+      <header className="App-header">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="news/:id" element={<SingleArticle />} />
+        </Routes>
+        {/* <SingleArticle /> */}
+        {/* <Home /> */}
+      </header>
     </div>
   );
 }
